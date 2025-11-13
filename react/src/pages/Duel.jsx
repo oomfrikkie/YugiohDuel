@@ -105,7 +105,7 @@ const increaseHealth = () => {
     setPlayer2({ ...player2, health: newHealth });
   }
 
-  
+  setBattleLog((prev) => prev + "\n" + currentPlayer + " gained " + calcInput)
   setCalcInput('');
 };
 
